@@ -1,0 +1,244 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* reset */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+:root{
+	
+	/** Colors **/
+	--White: hsl(0, 0%, 100%);
+
+	--Stone-100: hsl(30, 54%, 90%);
+	--Stone-150: hsl(30, 18%, 87%);
+	--Stone-600: hsl(30, 10%, 34%);
+	--Stone-900: hsl(24, 5%, 18%);
+
+	--Brown-800: hsl(14, 45%, 36%);
+
+	--Rose-800: hsl(332, 51%, 32%);
+	--Rose-50: hsl(330, 100%, 98%);
+
+	/** Typography **/
+
+	/* font-family */
+	--header-font: Young Serif;
+	--paragraph-font: Outfit;
+
+	/* font-size */
+	--fs-1: 28px;
+	--fs-2:19px;
+	--fs-3: 12px;
+
+	/* spacing */
+	--sp-1: 22px;
+	--sp-2: 15px;
+	--sp-3: 10px;
+	--sp-4: 7px;
+}
+
+.container{
+	background-color: var(--White);
+}
+
+.container-detail{
+	padding: var(--sp-1);
+}
+
+.img-container img{
+	width: 100%;
+}
+
+#detail-1 h1{
+	font-family: var(--header-font);
+	font-size: var(--fs-1);
+	font-weight: 200;
+	line-height: 32px;
+}
+
+#detail-1 p{
+	margin-top: var(--sp-2);
+	font-family: var(--paragraph-font), sans-serif;
+	font-size: var(--fs-3);
+	color: var(--Stone-600);
+}
+
+.preparation-wrapper{
+	background-color: var(--Rose-50);
+	margin-top: var(--sp-1);
+	padding: var(--sp-2);
+	border-radius: 10px;
+}
+
+.preparation-wrapper h3{
+	font-family: var(--paragraph-font), sans-serif;
+	font-size: var(--fs-2);
+	font-weight: 800;
+	color: var(--Rose-800);
+}
+
+.preparation-wrapper ul li{
+	font-family: var(--paragraph-font);
+	margin-top: var(--sp-3);
+	font-size: var(--fs-3);
+	margin-left: var(--sp-2);
+	padding-left: var(--sp-4);
+	color: var(--Stone-600);
+}
+
+.preparation-wrapper ul li::marker{
+	color: var(--Rose-800);
+}
+
+.ingredients-wrapper{
+	margin-top: var(--sp-1);
+	border-bottom: 1px solid var(--Stone-150);
+	padding-bottom: var(--sp-1);
+
+}
+
+.ingredients-wrapper h2{
+	font-family: var(--header-font);
+	color: var(--Brown-800);
+	font-size: var(--fs-2);
+	font-weight: 500;
+}
+
+.ingredients-wrapper ul li{
+	font-family: var(--paragraph-font);
+	margin-top: var(--sp-3);
+	font-size: var(--fs-3);
+	margin-left: var(--sp-2);
+	padding-left: var(--sp-4);
+	color: var(--Stone-600);
+}
+
+.ingredients-wrapper ul li::marker{
+	color: var(--Brown-800);
+	font-weight: 900;
+	font-size: 10px;
+  }
+
+#detail-2{
+	margin-top: var(--sp-1);
+	border-bottom: 1px solid var(--Stone-150);
+	padding-bottom: var(--sp-1);
+}
+
+#detail-2 h2{
+	color: var(--Brown-800);
+	font-weight: 500;
+	font-family: var(--header-font);
+	font-size: var(--fs-2);
+}
+
+#detail-2 ol li{
+	font-family: var(--paragraph-font);
+	margin-top: var(--sp-3);
+	font-size: var(--fs-3);
+	margin-left: var(--sp-2);
+	padding-left: var(--sp-4);
+	color: var(--Stone-600);
+}
+
+
+#detail-2 ol li::marker{
+	color: var(--Brown-800);
+	font-weight: 900;
+	
+}
+
+#detail-3{
+	margin-top: var(--sp-1);
+}
+
+#detail-3 h2{
+	color: var(--Brown-800);
+	font-weight: 500;
+	font-family: var(--header-font);
+	font-size: var(--fs-2);
+}
+
+#detail-3 p{
+	margin-top: var(--sp-2);
+	font-family: var(--paragraph-font), sans-serif;
+	font-size: var(--fs-3);
+	color: var(--Stone-600);
+}
+
+.nutrition-table{
+	margin-top: var(--sp-2);
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.nutrition-table tr{
+	font-family: var(--paragraph-font);
+	font-size: var(--fs-3);
+	border-bottom: 1px solid var(--Stone-150);
+}
+
+.nutrition-table tr > :first-child{
+	color: var(--Stone-600);
+	font-weight: 500;
+	padding-left: var(--sp-1);
+}
+
+.nutrition-table tr > :nth-child(2){
+	color: var(--Brown-800);
+	font-weight: 800;
+}
+.nutrition-table td{
+	padding: var(--sp-4);
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+	  background-color: var(--Rose-50);
+	  display: flex;
+	  justify-content: center;
+	  padding: 50px;
+	}
+  
+	.container {
+	  background-color: var(--White);
+	  max-width: 450px;
+	  border-radius: 20px;
+	  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	  overflow: hidden;
+	}
+
+	.img-container{
+		padding: var(--sp-1);
+	}
+
+	img {
+	  border-radius: var(--sp-3);
+	  width: 100%;
+	  height: auto;
+	  object-fit: cover;
+	}
+  
+	h1, h2, h3 {
+	  line-height: 1.3;
+	}
+  
+	.nutrition-table td,
+	.nutrition-table tr {
+	  font-size: 16px;
+	}
+  }
+
+
+
