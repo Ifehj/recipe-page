@@ -14,7 +14,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 
 ### Screenshot
-./screenshot.png
+![Screenshot](./screenshot.png)
 
 ### Links
 - Live Site URL: [https://ifehj.github.io/recipe-page/]
